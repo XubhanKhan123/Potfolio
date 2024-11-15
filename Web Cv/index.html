@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Cv</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/fc83a4b55e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><h3><span>S</span>ubhan <br><span>K</span>han</h3></div>
+            <ul id="sidemenu">
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                        <label class="switch">
+                            <input type="checkbox" id="themeToggle">
+                            <span class="slider"></span>
+                        </label>
+                </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Subhan Khan</span> <br> From Pakistan</h1>
+            </div>
+            <div class="col-md-6">
+                <img style="border-radius: 20px" src="./bg remove.png" height="350px" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <!--------------------------------Start about section---------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/Aboutme.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I’m Subhan Khan, a motivated and detail-oriented web developer with a passion for
+                        creating user-friendly and efficient web solutions. Although I’m just starting my journey in web
+                        development, I’ve gained a solid foundation in HTML, CSS, JavaScript, Bootstrap, Mysql ,Php and responsive
+                        design through hands-on projects and self-learning. I’m eager to apply my skills and continue
+                        growing in this dynamic field, constantly learning new technologies to enhance my expertise.
+                        With a keen eye for detail and a commitment to delivering clean, functional code, I’m excited to
+                        contribute to real-world projects and be part of innovative teams.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Web Development</span><br>Development Web Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>I have no experience </li>
+                            <li><span>Web Development</span><br>I have no experience</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Inter</span><br>Commerce-Group</li>
+                            <li><span>Web Development</span><br>One Year Diploma From Aptech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------End About Section--------------------------------------->
+
+    <!----------------------------------- Sart Services Section--------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>a passionate and enthusiastic web developer with a strong foundation in front-end and back-end
+                        technologies, including HTML, CSS, JavaScript, MySQL, and PHP. As a fresher, I’ve built hands-on
+                        experience through personal projects and continuous learning, focusing on developing responsive,
+                        dynamic websites and web applications. I’m eager to apply my technical skills in real-world
+                        projects, solve complex problems, and collaborate with teams to create impactful digital
+                        experiences. With a commitment to growth and a love for coding, I’m excited to take the next
+                        step in my web development career.</p>
+                    <br>
+                    <p>Learn more</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Designer</h2>
+                    <p>an aspiring web designer with a passion for creating visually appealing and user-friendly
+                        websites. With a strong foundation in design principles and hands-on experience with HTML, CSS,
+                        and basic web design tools, I’ve developed an eye for clean layouts, typography, and responsive
+                        design. As a fresher, I am eager to apply my creativity and technical skills to real-world
+                        projects, designing engaging and functional websites that enhance user experience. I’m
+                        constantly learning new trends and tools to stay up-to-date with the evolving world of web
+                        design.</p>
+                    <p style="margin-top: 29px;">Learn more</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h2>Bootstrap</h2>
+                    <p>an enthusiastic web developer with a focus on building responsive, mobile-first websites using
+                        Bootstrap. As a fresher, I have gained practical experience in developing clean, modern web
+                        interfaces with Bootstrap’s powerful framework, along with a solid understanding of HTML, CSS,
+                        and JavaScript. I’m skilled at leveraging Bootstrap’s grid system and components to create
+                        visually appealing and user-friendly designs. I’m eager to apply my skills in real-world
+                        projects and contribute to building dynamic, responsive web applications. With a passion for
+                        learning, I’m committed to growing as a developer in today’s fast-evolving tech landscape.</p>
+                    <p>Learn more</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------- End Services Section---------------------------------------->
+    <!----------------------------------- Start Portfolio Section------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/work 1.png">
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p class="pg">The To-Do List application is designed to help you manage your daily tasks efficiently and effectively. With a user-friendly interface, this app ensures that you can easily add, track, and manage your tasks, helping you stay organized and productive.</p>
+                        <a href="/web.html"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/work 2.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p class="pg">The Weather App provides real-time weather updates, alerts, helping users stay
+                            informed and prepared. It offers a simple, user-friendly interface for checking weather
+                            conditions anywhere.</p>
+                        <a href="/weath.html"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/work 3.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p class="pg">The Calculator app offers quick and accurate basic arithmetic operations with a
+                            user-friendly interface, making everyday calculations easy and efficient.</p>
+                        <a href="/calculator.html"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <details>
+        <summary class="btn btn1">Sea more</summary>
+        <div class="containers">
+            <div id="portfolio">
+                <div class="container">
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="/work 1.png">
+                            <div class="layer">
+                                <h3>Social Media App</h3>
+                                <p class="pg">The app connect you to the talented people around the world Download it
+                                    from
+                                    playstore</p>
+                                <a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="/work 2.png">
+                            <div class="layer">
+                                <h3>Music App</h3>
+                                <p class="pg">The app connect you to the talented people around the world Download it
+                                    from
+                                    playstore</p>
+                                <a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="/work 3.png">
+                            <div class="layer">
+                                <h3>Online Shopping App</h3>
+                                <p class="pg">The app connect you to the talented people around the world Download it
+                                    from
+                                    playstore</p>
+                                <a href="#"><i class="fa-sharp fa-solid fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn1">See more</a>
+                </div>
+            </div>
+        </div>
+    </details>
+    <!----------------------------------- End Portfolio Section------------------------------------------->
+    <!-----------------------------------Start Contact Section-------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> subhanzakir475@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 0316-8873088</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                    </div>
+                    <a href="/work-3.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="7ab83f47-4de2-44b6-bb70-e051281d3976">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea class="sms" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        <div id="result"></div>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Subhan Khan. Made Made with <i class="fa-solid fa-heart"></i> Html,Css,Javascript</p>
+        </div>
+    </div>
+    <!-----------------------------------End Contact Section-------------------------------------------->
+
+    <!-------------------------------------- start script for skills experience & education ---------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!----------------------------------- end script for skills experience & education --------------------------------->
+
+
+    <!-------------------------------------- script of sidebar for small screen ---------------------------------------->
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!------------------------------------------start contact form script----------------------------------------------->
+    <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = "Form submitted successfully";
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+    </script>
+    <!-------------------------------------------end contact form script------------------------------------------------>
+
+    <!----------------------------------------start light or dark theme script ----------------------------------------->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Check for saved user theme preference in localStorage
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            body.classList.add(currentTheme);
+            themeToggle.checked = currentTheme === 'dark-mode';
+        }
+
+        // Toggle between dark and light mode
+        themeToggle.addEventListener('change', () => {
+            if (themeToggle.checked) {
+                body.classList.add('dark-mode');
+                body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark-mode');
+            } else {
+                body.classList.add('light-mode');
+                body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light-mode');
+            }
+        });
+    </script>
+    <!---------------------------------------- light or dark theme script ---------------------------------------------->
+
+
+</body>
+
+</html>

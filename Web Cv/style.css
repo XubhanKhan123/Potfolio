@@ -1,0 +1,619 @@
+/* --------------------------------------------------Toggle Button Styles--------------------------------------------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 25px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 5px;
+    bottom: 2.5px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: red;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+/* --------------------------------------------------Toggle Button Styles--------------------------------------------- */
+
+/* --------------------------------------------------L and D Mode Styles---------------------------------------------- */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode a {
+    color: black;
+}
+
+body.light-mode .sub-title{
+    color: #080808;
+}
+
+body.light-mode .tab-links{
+    color: black;
+}
+
+body.light-mode #about{
+    color: black;
+}
+
+body.light-mode .copyright{
+    background-color: aliceblue;
+}
+
+body.light-mode form input, form textarea{
+    background-color: aliceblue;
+    color: black;
+}
+
+body.light-mode form textarea{
+    background-color: aliceblue;
+    color: black;
+}
+
+body.light-mode .services-list div{
+    background-color: aliceblue;
+}
+
+body.light-mode .services-list div:hover{
+    background-color: red;
+}
+
+body.light-mode .btn, .btn2{
+    color: white;
+}
+
+body.light-mode .layer{
+    color: white;
+    text-align: justify;
+}
+
+body.light-mode .btn, .btn1{
+    color: black;
+}
+.light-mode .logo{
+    background: #fff;
+    color: #080808;
+    width: 140px;
+    height: 70px;
+    text-align: center;
+    outline: 2px solid #080808;
+    border-radius: 8px;
+}
+
+body.dark-mode .pg{
+    color: white;
+    text-align: justify;
+}
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode nav, .dark-mode .container, .dark-mode .card {
+    background-color: black;
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode .btn {
+    background-color: transparent;
+    color: white;
+}
+.dark-mode .logo{
+    background: #080808;
+    color: #fff;
+    width: 140px;
+    height: 70px;
+    text-align: center;
+    outline: 2px solid#fff;
+    border-radius: 8px;
+}
+/* --------------------------------------------------L and D Mode Styles---------------------------------------------- */
+
+/* --------------------------------------------------My ScrollBar Styles---------------------------------------------- */
+textarea, .sms::-webkit-scrollbar{
+    width: .8rem;
+}
+textarea, .sms::-webkit-scrollbar-track{
+    background: transparent;
+}
+textarea, .sms::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: .5rem;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: .5rem;
+}
+
+/* --------------------------------------------------My ScrollBar Styles---------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo h3{
+    margin-top: 13px;
+}
+.logo span{
+    color: red;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.col-md-6{
+    margin-top: 10%;
+    font-size: 20px;
+}
+.col-md-6 h1{
+    font-size: 53px;
+    margin-top: 20px;
+}
+.col-md-6 h1 span{
+    color: red;
+}
+
+/*--------------------------------------------------About Section Styles---------------------------------------------- */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 p{
+    text-align: justify;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #ff474c;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*--------------------------------------------------About Section Styles----------------------------------------------*/
+
+/*-------------------------------------------------Services Section Styles---------------------------------------------*/
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s ,transform 0.5s;
+}
+.services-list div p{
+    text-align: justify;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: red;
+    transform: translateY(-10px);
+}
+/*-------------------------------------------------Services Section Styles---------------------------------------------*/
+
+/*------------------------------------------------Portfolio Section Styles---------------------------------------------*/
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), red);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1,1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 24px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: red;
+}
+/*------------------------------------------------Portfolio Section Styles---------------------------------------------*/
+
+/*-------------------------------------------------Contact Section Styles----------------------------------------------*/
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: red;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    resize: none;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: red;
+}
+/*------------------------------------------------Contact Section Styles----------------------------------------------*/
+
+/*-------------------------------------------------Small Screen Styles------------------------------------------------*/
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .dark-mode .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .dark-mode .header-text h1{
+        font-size: 30px;
+    }
+    .dark-mode nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    .dark-mode nav ul{
+        background: black;
+        color: red;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .dark-mode nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    .dark-mode nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .dark-mode .sub-title{
+        font-size: 40px;
+    }
+    .dark-mode .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .dark-mode .about-col-1{
+        margin-bottom: 30px;
+    }
+    .dark-mode .about-col-2{
+        font-size: 14px;
+    }
+    .dark-mode .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .dark-mode .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .dark-mode .copyright{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .light-mode .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .light-mode .header-text h1{
+        font-size: 30px;
+    }
+    .light-mode nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    .light-mode nav ul{
+        background: aliceblue;
+        color: red;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    .light-mode nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    .light-mode nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .light-mode .sub-title{
+        font-size: 40px;
+    }
+    .light-mode .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .light-mode .about-col-1{
+        margin-bottom: 30px;
+    }
+    .light-mode .about-col-2{
+        font-size: 14px;
+    }
+    .light-mode .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .light-mode .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .light-mode .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
